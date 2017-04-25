@@ -1,2 +1,2 @@
-# datawarehouse_for_genomes
-Data warehouse for genomes
+# Data warehouse for genomes
+Here is an example of how could be implemented and developed a data warehouse to support genomic analysis.
