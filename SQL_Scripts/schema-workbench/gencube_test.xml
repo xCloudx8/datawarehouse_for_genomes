@@ -1,0 +1,26 @@
+<Schema name="GenCube_Schema_2">
+  <Cube name="GenCube_test3WTF" visible="true" cache="true" enabled="true">
+    <Table name="ft_variant" schema="public">
+    </Table>
+    <Dimension type="StandardDimension" visible="true" foreignKey="chr" highCardinality="false" name="dt_chromosomes">
+      <Hierarchy name="chromosomes" visible="true" hasAll="false" primaryKey="chr">
+        <Table name="dt_chromosomes" schema="public">
+        </Table>
+        <Level name="chr" visible="true" column="chr" nameColumn="chr" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="refalt" name="dt_refalt">
+      <Hierarchy name="dt_refalt" visible="true" hasAll="false" primaryKey="refalt">
+        <Table name="dt_refalt" schema="public" alias="">
+        </Table>
+        <Level name="refalt" visible="true" column="refalt" nameColumn="refalt" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="couple_refalt" visible="true" column="couple_refalt" nameColumn="couple_refalt" parentColumn="couple_refalt" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Measure name="total_variants" column="tot_var" datatype="Integer" aggregator="count" visible="true">
+    </Measure>
+  </Cube>
+</Schema>

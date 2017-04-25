@@ -1,0 +1,110 @@
+<Schema name="Cubert_schema">
+  <Dimension visible="true" highCardinality="false" name="Dt_chromosomes">
+    <Hierarchy name="Chr" visible="true" hasAll="true" primaryKey="chr">
+      <Table name="dt_chromosomes" schema="public">
+      </Table>
+      <Level name="Chr" visible="true" column="chr" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension visible="true" highCardinality="false" name="Dt_positions">
+    <Hierarchy name="Pos" visible="true" hasAll="true" primaryKey="pos">
+      <Table name="dt_positions" schema="public">
+      </Table>
+      <Level name="Pos" visible="true" column="pos" type="Numeric" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="pos_int" visible="true" column="pos_int" ordinalColumn="pos" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension visible="true" highCardinality="false" name="Dt_refalt">
+    <Hierarchy name="Refalt" visible="true" hasAll="true" primaryKey="refalt">
+      <Table name="dt_refalt" schema="public">
+      </Table>
+      <Level name="Refalt" visible="true" column="refalt" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Couple_refalt" visible="true" column="couple_refalt" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension visible="true" highCardinality="false" name="Dt_term">
+    <Hierarchy name="term_hierarchy" visible="true" hasAll="true" primaryKey="lvl15">
+      <Table name="dt_term" schema="public">
+      </Table>
+      <Level name="Lvl2" visible="true" column="lvl2" type="Numeric" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="lvl3" visible="true" column="lvl3" type="Numeric" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="lvl4" visible="true" column="lvl4" type="Numeric" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="lvl5" visible="true" column="lvl5" type="Numeric" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="lvl6" visible="true" column="lvl6" type="Numeric" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="lvl7" visible="true" column="lvl7" type="Numeric" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="lvl8" visible="true" column="lvl8" type="Numeric" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="lvl9" visible="true" column="lvl9" type="Numeric" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="lvl10" visible="true" column="lvl10" type="Numeric" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="lvl11" visible="true" column="lvl11" type="Numeric" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="lvl12" visible="true" column="lvl12" type="Numeric" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="lvl13" visible="true" column="lvl13" type="Numeric" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="lvl14" visible="true" column="lvl14" type="Numeric" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="lvl15" visible="true" column="lvl15" type="Numeric" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="name_hierarchy" visible="true" hasAll="true" primaryKey="lvl15">
+      <Table name="dt_term" schema="public">
+      </Table>
+      <Level name="Lvl2_name" visible="true" column="lvl2_name" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Lvl3_name" visible="true" column="lvl3_name" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Lvl4_name" visible="true" column="lvl4_name" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Lvl5_name" visible="true" column="lvl5_name" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Lvl6_name" visible="true" column="lvl6_name" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Lvl7_name" visible="true" column="lvl7_name" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Lvl8_name" visible="true" column="lvl8_name" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Lvl9_name" visible="true" column="lvl9_name" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="lvl10_name" visible="true" column="lvl10_name" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Lvl11_name" visible="true" column="lvl11_name" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="lvl12_name" visible="true" column="lvl12_name" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Lvl13_name" visible="true" column="lvl13_name" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Lvl14_name" visible="true" column="lvl14_name" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Lvl15_name" visible="true" column="lvl15_name" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Cube name="Cubert_genome" visible="true" cache="true" enabled="true">
+    <Table name="ft_variant" schema="public">
+    </Table>
+    <DimensionUsage source="Dt_chromosomes" name="Dt_chromosomes" visible="true" foreignKey="chr" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Dt_positions" name="Dt_positions" visible="true" foreignKey="pos" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Dt_refalt" name="Dt_refalt" visible="true" foreignKey="refalt" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Dt_term" name="Dt_term" visible="true" foreignKey="lvl15" highCardinality="false">
+    </DimensionUsage>
+    <Measure name="Tot_var" column="tot_var" formatString="#" aggregator="count">
+    </Measure>
+  </Cube>
+</Schema>
