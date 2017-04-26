@@ -21,3 +21,7 @@ There is a simple example of report for Pentaho reporting
 
 ### Schema workbench
 Here are the xml of simple cubes developed starting from the DW
+
+===
+
+For a more detailed knowledge of how to develop a data warehouse for genomes with Pentaho read "datawarehouse_thesis.pdf"
