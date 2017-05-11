@@ -1,4 +1,0 @@
-﻿select graph_path.term1_id, graph_path.term2_id, max(graph_path.distance)
-from graph_path
-group by term1_id, term2_id, distance
-order by distance ASC;
